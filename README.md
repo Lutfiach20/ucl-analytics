@@ -1,15 +1,22 @@
 # Dashboard Analisis Performa Pemain (Machine Learning)
 
 ## Deskripsi
-Project ini merupakan aplikasi analisis performa pemain sepak bola berbasis machine learning yang digunakan untuk memberikan insight dan rekomendasi berdasarkan data statistik pemain.
+Project ini merupakan aplikasi analisis performa pemain sepak bola berbasis machine learning yang dikembangkan untuk menghasilkan insight dari data statistik pemain.
 
-Aplikasi dibangun menggunakan Streamlit sebagai dashboard interaktif dan model Random Forest untuk melakukan prediksi serta analisis performa.
+Model dibangun menggunakan Random Forest dan diimplementasikan dalam dashboard interaktif menggunakan Streamlit. Proses eksplorasi data, preprocessing, dan training model dilakukan menggunakan Google Colab.
+
+Aplikasi ini dapat digunakan untuk membantu analisis performa pemain, identifikasi kelemahan tim, serta mendukung pengambilan keputusan berbasis data.
+
+---
+
+## Live Demo
+🔗 https://ucl-analytics-achmadlutfi.streamlit.app/
 
 ---
 
 ## Tujuan
 - Menganalisis performa pemain berdasarkan data statistik
-- Memberikan insight untuk pengambilan keputusan (scouting / strategi tim)
+- Memberikan insight untuk scouting dan strategi tim
 - Menyediakan dashboard interaktif untuk eksplorasi data
 
 ---
@@ -17,24 +24,33 @@ Aplikasi dibangun menggunakan Streamlit sebagai dashboard interaktif dan model R
 ## Fitur Utama
 - Analisis performa pemain menggunakan Machine Learning (Random Forest)
 - Input 15 fitur statistik pemain
-- Prediksi performa pemain
+- Prediksi performa pemain secara otomatis
 - Rekomendasi pemain dengan karakteristik serupa
-- Visualisasi data dalam dashboard interaktif (Streamlit)
+- Analisis kelemahan tim berdasarkan data
+- Dashboard interaktif berbasis Streamlit
 
 ---
 
 ## Teknologi yang Digunakan
 - Python
-- Streamlit
+- Streamlit (Dashboard)
 - Scikit-learn (Random Forest)
 - Pandas & NumPy
+- Google Colab (Model Development & Training)
 - Matplotlib / Seaborn
 
 ---
 
-## Cara Menjalankan Project
+## Alur Sistem
+1. Data pemain diinput melalui dashboard
+2. Data diproses menggunakan scaler (normalisasi)
+3. Model Random Forest melakukan prediksi performa
+4. Sistem menampilkan:
+   - Hasil analisis performa pemain
+   - Rekomendasi pemain serupa
+   - Insight visualisasi data
+5. Analisis tambahan dilakukan untuk mengidentifikasi kelemahan tim
 
-1. Clone repository:
-```bash
-git clone https://github.com/username/nama-repo.git
-cd nama-repo
+---
+
+## Struktur Project
